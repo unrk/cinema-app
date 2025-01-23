@@ -1,11 +1,16 @@
 import { fetchMovieDetails } from '../utils.js';
 
+// je recupère les éléments du DOM
 const movieDetailsContainer = document.querySelector('#movie-details .movie-details-container');
 
+
+// affichage des détails d'un film
 async function displayMovieDetails() {
     const urlParams = new URLSearchParams(window.location.search);
     const movieId = urlParams.get('id');
 
+
+    // je recupère les détails du film
     if (movieId) {
         const movie = await fetchMovieDetails(movieId);
         if (movie) {

@@ -1,11 +1,15 @@
 import { searchMovies } from '../utils.js';
 
+
+// je recupère les éléments du DOM
 const searchBar = document.getElementById('search-bar');
 const searchResults = document.getElementById('search-results');
 const loadMoreButton = document.getElementById('load-more-search');
 let page = 1;
 let searchTerm = '';
 
+
+// affichage des résultats de recherche
 async function displaySearchResults() {
     const movies = await searchMovies(searchTerm, page);
     if (movies && movies.length > 0) {
@@ -19,11 +23,15 @@ async function displaySearchResults() {
             `;
             searchResults.appendChild(movieCard);
         });
+
+    // j'affiche un message attestant qu'il n'y as plus de résultats (ou pas dutout)
     } else if (page === 1) {
-        searchResults.innerHTML = '<p>No results found.</p>';
+        searchResults.innerHTML = '<p>Pas de résultats.</p>';
     }
 }
 
+
+// je recupère les résultats de recherche à chaque fois que l'utilisateur tape quelque chose dans la barre de recherche
 searchBar.addEventListener('input', () => {
     searchTerm = searchBar.value.trim();
     searchResults.innerHTML = '';
