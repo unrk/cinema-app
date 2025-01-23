@@ -24,8 +24,8 @@ async function displaySearchResults() {
             searchResults.appendChild(movieCard);
         });
 
-    // j'affiche un message attestant qu'il n'y as plus de résultats (ou pas dutout)
-    } else if (page === 1) {
+    // j'affiche un message si il n'y a pas de résultats
+    } else if (page === 1 && searchResults.children.length === 0) {
         searchResults.innerHTML = '<p>Pas de résultats.</p>';
     }
 }
