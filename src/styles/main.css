@@ -1,0 +1,154 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    background-image: url('../assets/header-background.png');
+}
+
+header {
+    background-color: #00000071;
+    border-bottom: #ffffff6e 1px solid;
+    display: flex;
+    color: #fff;
+    height: 20em;
+    padding: 1em 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 50px;
+    text-shadow: #000 0 0 50px;
+}
+
+nav {
+    margin-top: 0.5em;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1em;
+    text-shadow: #000 0 0 50px;
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: #b20b00;
+}
+
+nav a.active {
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.movie-card {
+    background-color: #4141415b;
+    border: #ffffff4f 1px solid;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgb(0, 0, 0);
+    margin: 10px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+}
+
+.movie-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.movie-card h3 {
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+.movie-card a {
+    text-decoration: none;
+    color: #b20b00;
+}
+
+#search-bar {
+    background-color: #9292925b;
+    border: #ffffff4f 1px solid;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgb(0, 0, 0);
+    padding: 15px;
+    margin: 10px 0;
+    width: 80em;
+    color: #fff;
+}
+
+#movie-details {
+    background-color: #8383839d;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.movie-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.movie-details-container img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.movie-details-container h2 {
+    margin-bottom: 10px;
+}
+
+.movie-details-container p {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+button {
+    background-color: #b20b00;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #700700;
+}
+
+@media (max-width: 768px) {
+    .movie-card {
+        width: 45%;
+    }
+}

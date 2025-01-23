@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recherche - Raphix</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <header>
+        <h1>Raphix</h1>
+        <nav>
+            <a href="index.html">Acceuil</a>
+            <a href="search.html" class="active">Rechercher</a>
+        </nav>
+    </header>
+    <main>
+        <section id="search-movies">
+            <h2>Search Movies</h2>
+            <input type="text" id="search-bar" placeholder="Search for movies..." autocomplete="off">
+            <div class="movie-list" id="search-results">
+            </div>
+            <button id="load-more-search">Afficher Plus...</button>
+        </section>
+    </main>
+
+    <script src="./scripts/pages/search.js" type="module"></script>
+</body>
+</html>
