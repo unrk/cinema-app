@@ -1,5 +1,5 @@
 # Raphix
 
 ### url :
-**https://memoir.lol**
+**https://memoir.lol/src/index.html**
 
